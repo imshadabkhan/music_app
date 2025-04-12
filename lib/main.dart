@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:music_app/core/constants/color_constants.dart';
+import 'package:music_app/view/starting/splash_view.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
             primarySwatch: Colors.blue,primaryColor: ColorConstants.primaryColor,scaffoldBackgroundColor: Colors.white,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
-          home: child,
+          home: SplashView(),
         );
       },
       // child: SplashView(),

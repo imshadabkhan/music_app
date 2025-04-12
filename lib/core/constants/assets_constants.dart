@@ -4,6 +4,7 @@ class Assets
   static String images= "$assets/images";
   static String icons= "$assets/icons";
   static String appLogo = "$images/app_logo.png";
+  static String splashScreenGuitar = "$images/splash_screen_guitar.png";
   static String logoWithNoTxt = "$images/logo_notext.png";
   static String managerImage = "$images/manager.png";
   static String cardImage = "$images/card_image.png";
