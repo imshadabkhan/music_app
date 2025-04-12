@@ -99,6 +99,7 @@ alignment: Alignment.center,
             textCapitalization: textCapitalization ?? TextCapitalization.none,
             readOnly: readOnly ?? false,
             maxLines: maxLines ?? 1,
+
             inputFormatters: inputFormatter,
             maxLength: maxLength,
             maxLengthEnforcement: maxLengthEnforced ?? false
@@ -106,13 +107,16 @@ alignment: Alignment.center,
                 : MaxLengthEnforcement.none,
             textAlign: textAlign ?? TextAlign.left,
             style: const TextStyle(
-                fontFamily: "InstrumentSansRegular",
+                fontFamily: "PoppinsRegular",
                 fontWeight: FontWeight.w400,
+
                 fontSize: 12,
                 color: Colors.black),
             keyboardType: textInputType,
             decoration: InputDecoration(
-              filled: true,
+
+filled: true,
+
               contentPadding: const EdgeInsets.symmetric(horizontal: 10),
               prefixIconConstraints: BoxConstraints(
                 minWidth: 15, // Set minimum width for the icon
@@ -122,35 +126,36 @@ alignment: Alignment.center,
                   ? Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(width: 17,height: 17,
-                    child: Image.asset(prefixIcon??"",fit: BoxFit.contain,color: Colors.black54)),
+                    child: Image.asset(prefixIcon??"",fit: BoxFit.contain,color: ColorConstants.iconColors)),
                   )
                   : null,
               suffixIcon: InkWell(
                   onTap: onTrailingTap,
 
-                  child: Icon(suffixIcon,size: 17,color: Colors.black54,)),
+                  child: Icon(suffixIcon,size: 17,color: ColorConstants.iconColors,)),
               hintText: hint,
-              hintStyle: const TextStyle(
-                  fontFamily: "InstrumentSansRegular",
+              hintStyle: TextStyle(
+                  fontFamily: "PoppinsRegular",
                   fontWeight: FontWeight.w400,
                   fontSize: 12,
-                  color: Colors.black45),
+                  color:ColorConstants.textHintColor),
               counterStyle: const TextStyle(
                 height: double.minPositive,
               ),
-              counterText: "",fillColor:ColorConstants.greyTextColor ,
+              counterText: "",
+              fillColor:ColorConstants.grayFillColor ,
               border: OutlineInputBorder(
                 borderSide:  BorderSide(color: ColorConstants.greyTextColor),
                 borderRadius:
                     borderRadius ?? BorderRadius.all(Radius.circular(10)),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: ColorConstants.primaryColor),
+                borderSide: BorderSide(color: ColorConstants.grayBorderColor),
                 borderRadius:
                     borderRadius ?? BorderRadius.all(Radius.circular(10)),
               ),
               enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color:  ColorConstants.greyTextColor),
+                borderSide: BorderSide(color:  ColorConstants.grayBorderColor),
                 borderRadius:
                     borderRadius ?? BorderRadius.all(Radius.circular(10)),
               ),

@@ -19,16 +19,18 @@ class Texts {
   }
 
   static textNormal(String label,
-      {double? size, Color? color, String? fontFamily, textAlign, overflow}) {
+      {double? size, Color? color, String? fontFamily, textAlign, overflow,var decoration}) {
     return AutoSizeText(
       label,
       style: TextStyle(
+        decoration: decoration,
           fontSize: size ?? 18.0,
           fontWeight: FontWeight.w400,
           fontFamily: "PoppinsRegular",
           color: color ?? ColorConstants.greyTextColor,
           overflow: overflow),
       textAlign: textAlign ?? TextAlign.center,
+
     );
   }
 
@@ -68,15 +70,21 @@ class Texts {
       String? fontFamily,
       var overflow,
       int? maxline,
-      var align}) {
+      var align,
+      var decoration
+      }) {
     return AutoSizeText(
       label,
       style: TextStyle(
+decoration: decoration,
+
           fontSize: size ?? 18.0,
-          fontFamily: fontFamily ?? "InstrumentSansRegular",
+          fontFamily: fontFamily ?? "PoppinsRegular",
           fontWeight: fontWeight ?? FontWeight.bold,
 
-          color: color ?? Colors.black),
+          color: color ?? Colors.black,
+
+      ),
       overflow: overflow ?? TextOverflow.ellipsis,
       textAlign: align ?? TextAlign.start,
       maxLines: maxline ?? 1,

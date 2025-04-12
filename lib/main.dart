@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           defaultTransition: Transition.rightToLeft,
           debugShowCheckedModeBanner: false,
           title: 'First Method',
-          theme: ThemeData(fontFamily: "InstrumentSansRegular",
+          theme: ThemeData(fontFamily: "PoppinsBlack",
             primarySwatch: Colors.blue,primaryColor: ColorConstants.primaryColor,scaffoldBackgroundColor: Colors.white,
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),

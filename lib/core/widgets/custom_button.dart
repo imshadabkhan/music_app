@@ -64,7 +64,8 @@ class CustomButton extends StatelessWidget {
               child: AutoSizeText(
                 label ?? "Continue".tr,
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize:fontSize??14,color: textColor??Colors.white, fontFamily:"InstrumentSansMedium",fontWeight: FontWeight.w400 ),
+                style: TextStyle(fontSize:fontSize??14,color: textColor??Colors.white, fontFamily:"PoppinsRegular",fontWeight: FontWeight.bold
+                ),
               ),
             ),
           ],

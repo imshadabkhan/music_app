@@ -7,6 +7,7 @@ import 'package:music_app/controller/onboarding_controller.dart';
 import 'package:music_app/core/constants/color_constants.dart';
 import 'package:music_app/core/widgets/onbarding_page.dart';
 import 'package:music_app/core/widgets/widgets.dart';
+import 'package:music_app/view/authentication/view/login_view.dart';
 
 class BoardingView extends StatelessWidget {
   OnboardingController onboardingController = Get.put(OnboardingController());
@@ -48,6 +49,7 @@ class BoardingView extends StatelessWidget {
               GestureDetector(
                   onTap: () {
                     if (onboardingController.currentPage.value == 3) {
+                      Get.to(LoginView());
                       // Navigate to authentication screen
                      /// Replace '/auth' with your actual route
                     } else {

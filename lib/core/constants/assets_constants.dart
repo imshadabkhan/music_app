@@ -56,4 +56,8 @@ class Assets
   static String unfilledHeartIcon = "$icons/unfilled_heart_icon.png";
   static String verifiedIconUnfilled = "$icons/verified_icon_unfilled.png";
   static String whiteVerifiedIcon = "$icons/white_verified_icon.png";
+  static String gooogleIcon = "$icons/google_icon.png";
+  static String emailIcon = "$icons/email_icon.png";
+  static String lockIcon = "$icons/lock_icon.png";
+  static String personIcon = "$icons/person.png";
 }

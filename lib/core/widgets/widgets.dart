@@ -32,6 +32,9 @@ class Widgets {
   static var heightSpaceH5 = SizedBox(
     height: 0.05.sh,
   );
+  static var widthSpaceW05 = SizedBox(
+    width: 0.005.sw,
+  );
   static var widthSpaceW1 = SizedBox(
     width: 0.01.sw,
   );
